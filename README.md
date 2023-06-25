@@ -78,6 +78,6 @@ This is external graph system designed for Solid-State Disks (SSDs). That is, MB
     Note that delete_edge and purge_delete utilities are provided under update_utility/.
     
 ### MBFSort:
-    This utilities is provided under update_utility.
+    This utility is provided under update_utility.
     Usage: ./MBFSort <input edge (graph) file> <bloom filter bits> <output edge (graph) file>
     Example: ./MBFSort input_twitter 8 output_twitter # 8 means 256 (2^8) bits.
