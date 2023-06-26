@@ -35,7 +35,11 @@ This is external graph system designed for Solid-State Disks (SSDs). That is, MB
 
 ## Usage:
     Note that all different graph analyses, by default, are only for BFS. To enable PageRank and CC, please uncomment some lines in the run_###.sh.
-    Also note that, to reduce repeatly bloom filter (BF) files generation time, the script may generate BF file via degree_cnt analysis. As a result, BF files can be reused across different graph analyses. 
+    Also note that, to reduce repeatly bloom filter (BF) files generation time, the script may generate BF file via degree_cnt analysis. As a result, BF files can be reused across different graph analyses.
+    
+    Configuration: 
+     Number of CPUs: Every run_##.sh provides an environment variable, PROCE, to adjust the number of threads executing during graph analyses.
+     Threshold on whether performing MBF query: Every run_##.sh provides an environment variable, MAX, to decide whether MBF query has to be performed. If MAX is 1, it indicates that MBF query is not executed, so MBFGraph is actually the baseline x-stream.
 ### Static Twitter Graph:
     ./download_twitter.sh
   
@@ -81,3 +85,8 @@ This is external graph system designed for Solid-State Disks (SSDs). That is, MB
     This utility is provided under update_utility.
     Usage: ./MBFSort <input edge (graph) file> <bloom filter bits> <output edge (graph) file>
     Example: ./MBFSort input_twitter 8 output_twitter # 8 means 256 (2^8) bits.
+
+## Dataset and Docker image
+Dataset: [https://doi.org/10.5281/zenodo.8076831](https://doi.org/10.5281/zenodo.8076831)
+
+Docker image: [https://doi.org/10.5281/zenodo.8080103](https://doi.org/10.5281/zenodo.8080103)
