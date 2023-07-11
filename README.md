@@ -89,4 +89,6 @@ This is external graph system designed for Solid-State Disks (SSDs). That is, MB
 ## Dataset and Docker image
 Dataset: [https://doi.org/10.5281/zenodo.8076831](https://doi.org/10.5281/zenodo.8076831)
 
+Dataset: [https://doi.org/10.5281/zenodo.8088562](https://doi.org/10.5281/zenodo.8088562)
+
 Docker image: [https://doi.org/10.5281/zenodo.8080103](https://doi.org/10.5281/zenodo.8080103)
